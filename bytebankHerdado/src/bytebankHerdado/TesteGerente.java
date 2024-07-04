@@ -15,5 +15,9 @@ public class TesteGerente {
 	        boolean autenticou = g1.autentica(g1.getSenha());
 
 	        System.out.println(autenticou);
+	        
+	        String otavio = "otavio";
+	        
+	        Object test = otavio;
 	}
 }
