@@ -3,7 +3,7 @@ package bytebankHerdado;
 public class Funcionario {
 	private String nome;
 	private String cpf;
-	protected double salario;
+	private double salario;
 	private int tipo = 0; // 0 - Funcionario Comun, 1 - Gerente, 2 - Diretor
 
 	public Funcionario() {
