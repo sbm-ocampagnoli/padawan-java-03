@@ -1,17 +1,17 @@
 package bytebankHerdado;
 
 public class Gerente extends Funcionario {
-	
+
 	private int senha;
 
 	public Gerente() {
 
 	}
-	
+
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
-	
+
 	public int getSenha() {
 		return senha;
 	}
@@ -24,9 +24,9 @@ public class Gerente extends Funcionario {
 		}
 
 	}
-
-//	public double getBonificacao() {
-//		return this.salario;
-//	}
+	
+	public double getBonificacao() {
+		return super.getBonificacao() + super.getSalario();
+	}
 
 }
