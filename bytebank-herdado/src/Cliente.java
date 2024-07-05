@@ -1,4 +1,5 @@
-public class Gerente extends Funcionario implements Autenticavel {
+
+public class Cliente implements Autenticavel {
 
 	private int senha;
 
@@ -14,12 +15,6 @@ public class Gerente extends Funcionario implements Autenticavel {
 	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
-	}
-
-	@Override
-	public double getBonificacao() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }
