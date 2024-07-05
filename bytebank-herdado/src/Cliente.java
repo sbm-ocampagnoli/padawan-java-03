@@ -1,14 +1,9 @@
 
-public abstract class FuncionarioAutenticavel extends Funcionario {
+public class Cliente implements Autenticavel {
 
-	protected int senha;
+	private int senha;
 
 	@Override
-	public double getBonificacao() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
 			return true;
@@ -17,6 +12,7 @@ public abstract class FuncionarioAutenticavel extends Funcionario {
 		}
 	}
 
+	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
